@@ -21,7 +21,6 @@ In the second half, we apply a classification task using breast cancer dataset a
 #### Mean Decrease in Impurity
 MDI, or "Gini importance", is a way to figure out how crucial a feature is in a Random Forest by looking at how much it reduces the tree's confusion or impurity. Basically, it checks how much cleaner each feature makes the decisions in a tree, and then averages this effect out over all the trees in the forest. The idea is that the more a feature helps in making clear splits, especially in parts of the tree with lots of samples, the more important it is considered. But, there's a catch - this method tends to favor features with more categories, so it can be a bit biased.
 
-![cf_Image](/mdi.png)
 
 
 #### Permutation Feature Importance
