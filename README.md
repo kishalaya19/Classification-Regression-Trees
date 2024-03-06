@@ -8,7 +8,7 @@ Two datasets were used in this project:
 
 - The New York Stock Exchange dataset, used for the regression task. This dataset contains various financial metrics and was used to build a linear regression model to predict estimated shares outstanding.
 
--The Breast Cancer dataset, used for the classification task. This dataset includes features related to breast cancer diagnoses and was utilized to build a decision tree classifier to predict the diagnosis (benign or malignant).
+- The Breast Cancer dataset, used for the classification task. This dataset includes features related to breast cancer diagnoses and was utilized to build a decision tree classifier to predict the diagnosis (benign or malignant).
 
 ## Project Structure
 The project is structured as follows:
