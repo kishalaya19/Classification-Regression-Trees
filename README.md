@@ -1,4 +1,4 @@
-# Classification-Regression-Trees
+# Classification And Regression Trees
 
 ## Overview
 This project focuses on solving a couple of regression and classification problems using tree-based models, specifically Random Forest and Decision Trees. The regression task predicts estimated shares outstanding, whereas the classification task involves predicting the diagnosis of breast cancer. Additionally, the project explores two key methods for recognizing feature importance: "Mean Decrease in Impurity" (MDI) and "Permutation Feature Importance" (PFI).
