@@ -22,7 +22,7 @@ In the second half, we apply a classification task using breast cancer dataset a
 MDI, or "Gini importance", is a way to figure out how crucial a feature is in a Random Forest by looking at how much it reduces the tree's confusion or impurity. Basically, it checks how much cleaner each feature makes the decisions in a tree, and then averages this effect out over all the trees in the forest. The idea is that the more a feature helps in making clear splits, especially in parts of the tree with lots of samples, the more important it is considered. But, there's a catch - this method tends to favor features with more categories, so it can be a bit biased.
 
 
-![mdi Image](/mdi.png)
+<img src="mdi.png" width="540" height="381">
 
 #### Permutation Feature Importance
 PFI (Permutation Feature Importance) is a different way to check how important a feature is, but this time by messing with it. After the model's all set up, it mixes up the values of one feature at a time to mess up the link between the feature and the real results. By doing this, it can see how much worse the model performs without the proper order of that feature's data, showing how key that feature was. This method works with any model, which is pretty cool, but it's also a lot more work because you have to run the model many times, once for every single feature.
