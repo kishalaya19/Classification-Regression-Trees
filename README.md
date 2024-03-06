@@ -13,12 +13,8 @@ Two datasets were used in this project:
 ## Project Structure
 The project is structured as follows:
 
-### Data preprocessing:
-Very basic EDA done since the purpose here is to explore tree models. basic data cleaning involved dropping unnecessary columns, handling null values, and splitting into features and target variables.
-
-### Model building and evaluation:
-Random Forest models were built for the regression task, with hyperparameters like min_samples_split tuned for optimization.
-A Decision Tree classifier was developed for the breast cancer diagnosis prediction, including confusion matrix evaluation and tree visualization.
+The regression project builds two models predicting estimated shares outstanding in the NYSE dataset - one using a default Random Forest and the other with a tuned Random Forest (min_sample_split =3) and their out of sample mean squared error is compared. Next we dive deeper in to the feature importance method of tree based models and explore the popular two methods.
+In the second half, we apply a classification task using breast cancer dataset and explore in to depth the evaluation metrics - confusion matrix and classification report. In the end we also visualize the tree and comment on if prunning is necessary.
 
 ## Feature importance analysis:
 
@@ -31,7 +27,7 @@ MDI, or "Gini importance", is a way to figure out how crucial a feature is in a 
 #### Permutation Feature Importance
 PFI (Permutation Feature Importance) is a different way to check how important a feature is, but this time by messing with it. After the model's all set up, it mixes up the values of one feature at a time to mess up the link between the feature and the real results. By doing this, it can see how much worse the model performs without the proper order of that feature's data, showing how key that feature was. This method works with any model, which is pretty cool, but it's also a lot more work because you have to run the model many times, once for every single feature.
 
-
+![pfi_Image](/pfi.png)
 ## Main Highlights and Outcomes
 
 1. Tuning the min_samples_split hyperparameter in the Random Forest model reduced the out-of-sample mean squared error (MSE) from 0.112 to 0.109, indicating reduced overfitting.
@@ -41,3 +37,5 @@ The analysis revealed a significant overlap in feature importance as identified 
 The Decision Tree exhibited potential overfitting, indicated by a full growth where each leaf is pure. Variables like perimeter_worst and concave_points_worst appeared frequently, highlighting their importance in the classification.
 
 4. The project concluded that while the Decision Tree performed well (F1 score of 0.92), there might not be a necessity for pruning in this specific dataset context due to its well-balanced nature.
+
+![cf_Image](/cf_report.png)
