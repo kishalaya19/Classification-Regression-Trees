@@ -34,11 +34,13 @@ Given below is the selected top 10 features from the PFI method.
 ## Main Highlights and Outcomes
 
 1. Tuning the min_samples_split hyperparameter in the Random Forest model reduced the out-of-sample mean squared error (MSE) from 0.112 to 0.109, indicating reduced overfitting.
-The analysis revealed a significant overlap in feature importance as identified by the MDI and PFI methods, with 9 out of the top 10 features being common between them. In contrast, the Lasso model shared only one common feature, showing a distinct difference in feature selection.
 
-2. For the classification task, the Decision Tree model achieved high precision and recall rates, indicating strong performance in identifying both benign and malignant tumors.
-The Decision Tree exhibited potential overfitting, indicated by a full growth where each leaf is pure. Variables like perimeter_worst and concave_points_worst appeared frequently, highlighting their importance in the classification.
+2. The feature importance analysis revealed a significant overlap in feature importance as identified by the MDI and PFI methods, with 9 out of the top 10 features being common between them. In contrast, the Lasso model shared only one common feature, showing a distinct difference in feature selection by tree based methods and linear methods.
 
-4. The project concluded that while the Decision Tree performed well (F1 score of 0.92), there might not be a necessity for pruning in this specific dataset context due to its well-balanced nature.
+3. For the classification task, the Decision Tree model achieved high precision and recall rates, indicating strong performance in identifying both benign and malignant tumors.
+  
+4. The Decision Tree exhibited potential overfitting, indicated by a full growth where each leaf is pure. Variables like perimeter_worst and concave_points_worst appeared frequently, highlighting their importance in the classification.
+
+5. The project concluded that while the Decision Tree performed well (F1 score of 0.92), there might not be a necessity for pruning in this specific dataset context due to its well-balanced nature.
 
 <img src="cf_report.png" width="628" height="250">
