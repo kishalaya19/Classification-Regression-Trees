@@ -1,2 +1,2 @@
 # Classification-Regression-Trees
-Couple of short regression and classification tasks solved using Tree based models. Also exploring two key methods to recognise feature importance -  "Mean Decrease in Impurity" and "Permutation Feature Importance"
+Couple of short regression and classification projects solved using Tree based models. Also explored two key methods to recognise feature importance -  "Mean Decrease in Impurity" and "Permutation Feature Importance"
