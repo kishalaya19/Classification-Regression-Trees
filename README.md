@@ -13,8 +13,10 @@ Two datasets were used in this project:
 ## Project Structure
 The project is structured as follows:
 
-The regression project builds two models predicting estimated shares outstanding in the NYSE dataset - one using a default Random Forest and the other with a tuned Random Forest (min_sample_split =3) and their out of sample mean squared error is compared. Next we dive deeper in to the feature importance method of tree based models and explore the popular two methods.
-In the second half, we apply a classification task using breast cancer dataset and explore in to depth the evaluation metrics - confusion matrix and classification report. In the end we also visualize the tree and comment on if prunning is necessary.
+- The regression project builds two models predicting estimated shares outstanding in the NYSE dataset - one using a default Random Forest and the other with a tuned Random Forest (min_sample_split =3) and their out of sample mean squared error is compared.
+- Next we dive deeper in to the feature importance method of tree based models and explore the popular two methods.
+- In the second half, we apply a classification task using breast cancer dataset and explore in to depth the evaluation metrics - confusion matrix and classification report.
+- In the end we also visualize the tree and comment on if prunning is necessary.
 
 ## Feature importance analysis:
 
