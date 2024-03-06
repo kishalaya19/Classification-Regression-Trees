@@ -28,6 +28,7 @@ MDI, or "Gini importance", is a way to figure out how crucial a feature is in a 
 PFI (Permutation Feature Importance) is a different way to check how important a feature is, but this time by messing with it. After the model's all set up, it mixes up the values of one feature at a time to mess up the link between the feature and the real results. By doing this, it can see how much worse the model performs without the proper order of that feature's data, showing how key that feature was. This method works with any model, which is pretty cool, but it's also a lot more work because you have to run the model many times, once for every single feature.
 
 ![pfi_Image](/pfi.png)
+<img src="pfi.png" width="50" height="50">
 ## Main Highlights and Outcomes
 
 1. Tuning the min_samples_split hyperparameter in the Random Forest model reduced the out-of-sample mean squared error (MSE) from 0.112 to 0.109, indicating reduced overfitting.
