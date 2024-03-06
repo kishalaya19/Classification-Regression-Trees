@@ -39,4 +39,4 @@ The Decision Tree exhibited potential overfitting, indicated by a full growth wh
 
 4. The project concluded that while the Decision Tree performed well (F1 score of 0.92), there might not be a necessity for pruning in this specific dataset context due to its well-balanced nature.
 
-<img src="cf_report.png" width="728" height="300">
+<img src="cf_report.png" width="628" height="250">
