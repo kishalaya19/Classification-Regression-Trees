@@ -18,12 +18,13 @@ The project is structured as follows:
 - In the second half, we apply a classification task using breast cancer dataset and explore in to depth the evaluation metrics - confusion matrix and classification report.
 - In the end we also visualize the tree and comment on if prunning is necessary.
 
-## Feature importance analysis:
+## Feature importance analysis on regression task (New York Stock Exchange dataset):
 
 #### Mean Decrease in Impurity
 MDI, or "Gini importance", is a way to figure out how crucial a feature is in a Random Forest by looking at how much it reduces the tree's confusion or impurity. Basically, it checks how much cleaner each feature makes the decisions in a tree, and then averages this effect out over all the trees in the forest. The idea is that the more a feature helps in making clear splits, especially in parts of the tree with lots of samples, the more important it is considered. But, there's a catch - this method tends to favor features with more categories, so it can be a bit biased. Below is the plot of the selected top 10 features from the MDI method.
 
 <img src="mdi.png" width="540" height="381">
+
 
 #### Permutation Feature Importance
 PFI (Permutation Feature Importance) is a different way to check how important a feature is, but this time by messing with it. After the model's all set up, it mixes up the values of one feature at a time to mess up the link between the feature and the real results. By doing this, it can see how much worse the model performs without the proper order of that feature's data, showing how key that feature was. This method works with any model, which is pretty cool, but it's also a lot more work because you have to run the model many times, once for every single feature.
@@ -31,10 +32,30 @@ Given below is the selected top 10 features from the PFI method.
 
 <img src="pfi.png" width="540" height="381">
 
-#### Visualising the tree
+#### Visualising the Decision tree for classification task (breast cancer)
 
 <img src="image.png" width="540" height="381">
 
+#### Observation from the Decision tree
+
+Here we can see that the tree overfits by growing till each of its leaf is pure. Few variables are appear frequenty in the tree plot are 
+
+- perimeter_worst
+- concave_points_worst
+- texture_worst
+- area_se
+- symmetry_worst
+- concave_points_se
+
+#### What is Pruning and do we need it here
+
+#### Pruning of Trees
+
+- Pruning of Trees are done to avoid overfitting the data since Decision Trees are built in a way to grow till all leaves are pure. This might lead to very good fit in the training data but reduced performance in the out of sample of real world data.
+
+- In Pruning, we don't allow the tree to grow fully but stop its growth at a maximum depth given by the parameter max_depth
+
+- We would ideally go about pruning the tree when its performance on the validation set is poorer compared to the train set. Here we can see that our model does really well in this well balanced data set at f-1 score of 0.92 so we may not want to prune it in this case. 
 
 ## Main Highlights and Outcomes
 
