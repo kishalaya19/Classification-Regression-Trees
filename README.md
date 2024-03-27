@@ -31,6 +31,11 @@ Given below is the selected top 10 features from the PFI method.
 
 <img src="pfi.png" width="540" height="381">
 
+#### Visualising the tree
+
+<img src="image.png" width="540" height="381">
+
+
 ## Main Highlights and Outcomes
 
 1. Tuning the min_samples_split hyperparameter in the Random Forest model reduced the out-of-sample mean squared error (MSE) from 0.112 to 0.109, indicating reduced overfitting.
